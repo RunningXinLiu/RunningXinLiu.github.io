@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xin Liu 近地表地球物理研究与软件平台：面向工程勘察、城市地下空间、矿山安全和地质灾害监测的结构探测、动态监测与可视化解释流程。">
+  <title>Xin Liu | Near-Surface Geophysics Software</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://github.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Xin Liu home">
+      <span class="brand-mark">XL</span>
+      <span>Xin Liu</span>
+    </a>
+    <nav class="nav-links" aria-label="Site sections">
+      <a href="#skill-tree">Capabilities</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-link" href="https://orcid.org/0000-0003-0889-7388" target="_blank" rel="noreferrer">ORCID</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="waveCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Near-Surface Geophysics · Safety Monitoring · Engineering Software</p>
+          <h1 id="hero-title">近地表复杂介质结构探测与动态安全监测软件平台</h1>
+          <p class="hero-subtitle">主被动面波 · 微震定位 · HVSR · dV/v速度变化 · GPU九分量互相关 · 可视化工程软件界面</p>
+          <p class="hero-lede">
+            为工程勘察、城市地下空间、矿山安全、地质灾害、水利交通与地下工程监测提供一体化地球物理处理解释能力，覆盖数据导入、质量控制、频散成像、联合反演、异常解释与成果输出。
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="#skill-tree">查看能力体系</a>
+            <a class="button secondary" href="#workflow">了解处理流程</a>
+            <a class="button secondary" href="https://orcid.org/0000-0003-0889-7388" target="_blank" rel="noreferrer">学术记录</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/xin-liu-5639ab17a/" target="_blank" rel="noreferrer">联系合作</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Researcher profile">
+          <img src="https://github.com/RunningXinLiu.png?size=360" alt="Xin Liu GitHub avatar" width="112" height="112">
+          <div>
+            <p class="profile-name">Xin Liu</p>
+            <p class="profile-role">Near-surface geophysics · seismic monitoring · scientific software</p>
+          </div>
+          <dl class="profile-facts">
+            <div>
+              <dt>Current affiliation</dt>
+              <dd>University of Science and Technology of China</dd>
+            </div>
+            <div>
+              <dt>Training</dt>
+              <dd>UT Austin · China University of Petroleum Beijing</dd>
+            </div>
+            <div>
+              <dt>ORCID</dt>
+              <dd>0000-0003-0889-7388</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="positioning" aria-label="Platform positioning">
+      <p>平台定位：服务于复杂场地的近地表结构探测、隐患识别与动态风险监测，而非单一算法演示工具。</p>
+    </section>
+
+    <section id="skill-tree" class="section skill-section">
+      <div class="section-heading">
+        <p class="kicker">Platform Capabilities</p>
+        <h2>从结构成像、灵活布设、动态监测到工程级软件交付。</h2>
+      </div>
+
+      <div class="capability-flow" aria-label="Capability chain">
+        <article class="capability-card reveal">
+          <span class="capability-tag blue">结构成像</span>
+          <h3>主被动面波</h3>
+          <ul>
+            <li>主动源：浅部精细约束</li>
+            <li>被动源：深部连续探测</li>
+            <li>基阶与高阶频散分析</li>
+            <li>主被动联合反演成像</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <span class="capability-tag green">灵活布设</span>
+          <h3>线阵与面阵</h3>
+          <ul>
+            <li>线阵剖面探测</li>
+            <li>面阵区域普查</li>
+            <li>面阵双台法分析</li>
+            <li>适配复杂现场条件</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <span class="capability-tag orange">动态监测</span>
+          <h3>微震与速度变化</h3>
+          <ul>
+            <li>微震事件定位</li>
+            <li>HVSR 辅助分析</li>
+            <li>dV/v 相对速度变化</li>
+            <li>风险演化趋势识别</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <span class="capability-tag purple">软件平台</span>
+          <h3>可视化工程应用</h3>
+          <ul>
+            <li>完整软件界面</li>
+            <li>参数可控，流程清晰</li>
+            <li>GPU 九分量互相关</li>
+            <li>后续带地形波形反演</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section workflow-section">
+      <div class="section-heading compact">
+        <p class="kicker">Processing Workflow</p>
+        <h2>面向项目交付的标准化处理流程</h2>
+      </div>
+      <ol class="workflow-list reveal" aria-label="Processing steps">
+        <li>数据导入</li>
+        <li>质量控制</li>
+        <li>频散成像</li>
+        <li>曲线拾取</li>
+        <li>联合反演</li>
+        <li>异常解释</li>
+        <li>成果输出</li>
+      </ol>
+    </section>
+
+    <section class="section domains-section" aria-labelledby="domains-title">
+      <div class="section-heading">
+        <p class="kicker">Application Scenarios</p>
+        <h2 id="domains-title">适用于对浅部结构、地下隐患和动态风险有明确解释需求的工程场景。</h2>
+      </div>
+      <div class="domain-grid">
+        <article class="domain-card blue reveal">
+          <h3>城市地下空间</h3>
+          <p>道路塌陷、空洞、人防、地铁沿线</p>
+        </article>
+        <article class="domain-card green reveal">
+          <h3>工程勘察与交通水利</h3>
+          <p>场地评价、路基、坝基、边坡</p>
+        </article>
+        <article class="domain-card orange reveal">
+          <h3>矿山与地质灾害</h3>
+          <p>采空区、岩溶、滑坡、破碎带</p>
+        </article>
+        <article class="domain-card purple reveal">
+          <h3>地下工程与环境场地</h3>
+          <p>储库、地热、填埋场、尾矿库</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-section" aria-labelledby="visual-title">
+      <div class="visual-copy reveal">
+        <p class="kicker">Capability Map</p>
+        <h2 id="visual-title">一套从观测、处理、反演到解释输出的近地表软件能力框架。</h2>
+        <p>
+          能力体系围绕主被动面波、阵列观测、微震监测、速度变化识别和工程可视化展开，目标是把多源地震观测转化为可解释、可复核、可交付的工程成果。
+        </p>
+      </div>
+      <figure class="skill-image reveal">
+        <img src="assets/near-surface-platform-skill-tree.png" alt="Near-surface complex media structure exploration and dynamic safety monitoring software platform skill tree" width="1600" height="928">
+      </figure>
+    </section>
+
+    <section id="research" class="section research-section">
+      <div class="section-heading">
+        <p class="kicker">Research Foundation</p>
+        <h2>公开学术记录覆盖地震波形处理、面波层析成像与数值模拟。</h2>
+      </div>
+
+      <div class="research-layout">
+        <div class="timeline reveal" aria-label="Education timeline">
+          <article>
+            <span>2022 - Present</span>
+            <h3>University of Science and Technology of China</h3>
+            <p>Current public education affiliation in Hefei, Anhui.</p>
+          </article>
+          <article>
+            <span>2018 - 2022</span>
+            <h3>The University of Texas at Austin</h3>
+            <p>Jackson School of Geoscience · Ph.D-level training in geoscience.</p>
+          </article>
+          <article>
+            <span>2011 - 2018</span>
+            <h3>China University of Petroleum Beijing</h3>
+            <p>College of Geophysics and Information Engineering · Bachelor and Master.</p>
+          </article>
+        </div>
+
+        <div class="publication-list reveal" aria-label="Selected ORCID works">
+          <article class="publication-card">
+            <span>2026 · Preprint</span>
+            <h3>Direct Surface-Wave Tomography of Azimuthal Anisotropy Using a Data-Adaptive Ensemble Approach</h3>
+            <a href="https://doi.org/10.5194/egusphere-egu26-7800" target="_blank" rel="noreferrer">DOI 10.5194/egusphere-egu26-7800</a>
+          </article>
+          <article class="publication-card">
+            <span>2026 · Seismological Research Letters</span>
+            <h3>SeismicXM: A Cross-Task Foundation Model for Single-Station Seismic Waveform Processing</h3>
+            <a href="https://doi.org/10.1785/0220250290" target="_blank" rel="noreferrer">DOI 10.1785/0220250290</a>
+          </article>
+          <article class="publication-card">
+            <span>2019 · Geophysical Prospecting</span>
+            <h3>Perfectly matched layer boundary conditions for frequency-domain acoustic wave simulation in the mesh-free discretization</h3>
+            <a href="https://doi.org/10.1111/1365-2478.12788" target="_blank" rel="noreferrer">DOI 10.1111/1365-2478.12788</a>
+          </article>
+          <article class="publication-card">
+            <span>2017 · SEG Technical Program</span>
+            <h3>A perfectly matched layer boundary condition for acoustic-wave simulation in mesh-free discretization using frequency-domain RBF-FD</h3>
+            <a href="https://doi.org/10.1190/segam2017-17661221.1" target="_blank" rel="noreferrer">DOI 10.1190/segam2017-17661221.1</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-copy reveal">
+        <p class="kicker">Contact</p>
+        <h2>面向科研合作、工程验证和软件平台化开发。</h2>
+        <p>如需讨论近地表探测、动态安全监测、阵列处理、反演成像或工程软件界面，可通过 LinkedIn 联系，并通过 ORCID 与 GitHub 查看公开学术和代码记录。</p>
+      </div>
+      <div class="contact-actions reveal">
+        <a class="button primary" href="https://orcid.org/0000-0003-0889-7388" target="_blank" rel="noreferrer">ORCID</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/xin-liu-5639ab17a/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button ghost dark" href="https://github.com/RunningXinLiu" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year">2026</span> Xin Liu</span>
+    <span>Near-surface geophysics research, monitoring workflows, and engineering software capabilities.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
